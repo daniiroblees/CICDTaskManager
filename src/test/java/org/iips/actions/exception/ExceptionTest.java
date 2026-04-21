@@ -10,7 +10,7 @@ class ExceptionTest {
   @Test
   @DisplayName("TaskNotFoundException should contain id in message")
   void taskNotFoundExceptionMessage() {
-    TaskNotFoundException ex = new TaskNotFoundException("1234");
+    TaskNotFoundException ex = new TaskNdotFoundException("1234");
     assertTrue(ex.getMessage().contains("1234"));
   }
 
